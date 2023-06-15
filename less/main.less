@@ -1,57 +1,69 @@
 // out: "../css/main.css", compress: true, sourceMap: true
 
-.main_menu{
+.menu{
     display: flex;
-    flex-direction: row;
-    &-logo{
+    justify-content: space-between;
+    &-left{
         margin-left: 116px;
         margin-top: 20px;
         margin-bottom: 20px;
+        margin-right: 2.5rem;
     }
-    &-button{
-        background: #70C05B;
-        border-radius: 4px;
-        margin-left: 40px;
+    &-middle{
         margin-top: 16px;
         margin-bottom: 16px;
-        font-family: 'Rubik';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 150%;
+        margin-right: 2.5rem;
         display: flex;
-        align-items: center;
-        text-align: center;
-        color: #FFFFFF;
-        border: 0;
-        &-line{
-            margin: 8px;
+        justify-content: space-evenly;
+        .catalog{
+            margin-right: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #70C05B;
+            border-radius: 4px;
+            border: none;
+            img{
+                margin: 8px;
+            }
+            .text{
+                margin: 8px;
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                color: #FFFFFF;
+            }
         }
-        &-text{
-            margin-left: 8px;
-            margin-right: 8px;
-            padding-left: 10px;
-            padding-right: 10px;
+        .search{
+            display: flex;
+            justify-content: space-between;
+            background: #FFFFFF;
+            border: 1px solid #70C05B;
+            border-radius: 4px;
+            & input{
+                background: transparent;
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                color: #8F8F8F;
+                padding-left: 16px;
+                border: none;
+                width: 20rem;
+            }
+            .button{
+                background: transparent;
+                display: flex;
+                align-items: center;
+                border: none;
+            }
         }
     }
-    &-search{
-        margin-left: 16px;
-        margin-right: 40px;
+    &-right{
+        margin-right: 116px;
         margin-top: 16px;
         margin-bottom: 16px;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 8px;
-        gap: 10px;
-        width: 374px;
-        height: 40px;
-        background: #FFFFFF;
-        border: 1px solid #70C05B;
-        border-radius: 4px;
-        flex: none;
-        order: 1;
-        flex-grow: 1;
+        background-color: yellow;
     }
 }
