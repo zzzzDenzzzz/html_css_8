@@ -2,17 +2,19 @@
 
 .menu{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    background: #FFFFFF;
+    width: 100%;
     &-left{
         margin-left: 116px;
         margin-top: 20px;
         margin-bottom: 20px;
-        margin-right: 2.5rem;
+        margin-right: 40px;
     }
     &-middle{
         margin-top: 16px;
         margin-bottom: 16px;
-        margin-right: 2.5rem;
+        margin-right: 40px;
         display: flex;
         justify-content: space-evenly;
         .catalog{
@@ -50,7 +52,7 @@
                 color: #8F8F8F;
                 padding-left: 16px;
                 border: none;
-                width: 20rem;
+                width: 400px;
             }
             .button{
                 background: transparent;
@@ -64,6 +66,48 @@
         margin-right: 116px;
         margin-top: 16px;
         margin-bottom: 16px;
-        background-color: yellow;
+        display: flex;
+        justify-content: space-between;
+        .links{
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            color: #414141;
+            display: flex;
+            img{
+                width: 24px;
+                height: 24px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 8px;
+            }
+            .links-item{
+                margin-right: 24px;
+            }
+        }
+        .user{
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            img{
+                margin-right: 10px;
+            }
+            .name{
+                margin-right: 18px;
+            }
+        }
+    }
+}
+section{
+    margin-top: 4px;
+    background: #FBF8EC;
+    img{
+        width: 100%;
     }
 }
