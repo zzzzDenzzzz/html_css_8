@@ -105,42 +105,60 @@
 }
 section{
     background: #FBF8EC;
-    img{
-        width: 100%;
-        margin-top: 4px;
+    .sliders{
         margin-bottom: 80px;
+        img{
+            margin-top: 4px;
+            width: 100%;
+        }
     }
     .shop{
         display: grid;
         margin-left: 116px;
         margin-right: 116px;
         .promotions{
-            .top{
+            margin-bottom: 120px;
+            .headline{
                 display: flex;
-                justify-content: center;
-                height: auto;
+                justify-content: space-between;
+                align-items: flex-end;
                 .left{
-                    align-self: auto;
-                    p{
-                        font-family: 'Rubik';
-                        font-style: normal;
-                        font-weight: 700;
-                        font-size: 36px;
-                        color: #414141;
-                    }
+                    font-family: 'Rubik';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 36px;
+                    color: #414141;
                 }
                 .right{
-                    .text{
-                        font-family: 'Rubik';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 16px;
-                        color: #606060;
+                    button{
+                        border: none;
+                        background: transparent;
+                        display: flex;
+                        .text{
+                            font-family: 'Rubik';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            color: #606060;
+                        }
+                        img{
+                            margin-left: 8px;
+                            margin-right: 8px;
+                            width: 22px;
+                            height: 22px;
+                        }
                     }
-                    img{
-                        width: 24px;
-                        height: 24px;
-                    }
+                }
+            }
+            .content{
+                margin-top: 40px;
+                display: flex;
+                justify-content: space-between;
+                img{
+                    width: 272px;
+                    height: 349px;
+                    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+                    border-radius: 4px;
                 }
             }
         }
