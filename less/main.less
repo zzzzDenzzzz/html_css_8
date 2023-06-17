@@ -24,6 +24,7 @@
             background: #70C05B;
             border-radius: 4px;
             border: none;
+            cursor: pointer;
             img{
                 margin: 8px;
             }
@@ -58,6 +59,7 @@
                 display: flex;
                 align-items: center;
                 border: none;
+                cursor: pointer;
             }
         }
     }
@@ -134,6 +136,7 @@ section{
                         border: none;
                         background: transparent;
                         display: flex;
+                        cursor: pointer;
                         .text{
                             font-family: 'Rubik';
                             font-style: normal;
@@ -148,17 +151,43 @@ section{
                             height: 22px;
                         }
                     }
+                    button:hover{
+                        background-color: #e7e1e1;
+                    }
                 }
             }
             .content{
                 margin-top: 40px;
                 display: flex;
                 justify-content: space-between;
-                img{
+                .item_1{
                     width: 272px;
                     height: 349px;
                     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
                     border-radius: 4px;
+                    .add{
+                        margin: 8px;
+                        width: auto;
+                        button{
+                            padding-top: 3vh;
+                            padding-bottom: 3vh;
+                            width: 100%;
+                            background: transparent;
+                            border: 1px solid #70C05B;
+                            border-radius: 4px;
+                            font-family: 'Rubik';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            color: #70C05B;
+                            cursor: grab;
+                        }
+                        button:hover{
+                            color: #FFFFFF;
+                            background-color: #FF6633;
+                            border: 1px solid #FF6633;
+                        }
+                    }
                 }
             }
         }
