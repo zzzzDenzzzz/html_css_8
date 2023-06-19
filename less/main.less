@@ -161,19 +161,33 @@ section{
             }
             .content{
                 margin-top: 40px;
+                margin-right: 40px;
                 display: flex;
                 justify-content: space-between;
                 .item_1{
-                    width: 272px;
                     height: 349px;
+                    width: 272px;
                     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
                     border-radius: 4px;
+                    background: #FFFFFF;
+                    img{
+                        width: 90%;
+                        margin-bottom: 8px;
+                        margin-left: 8px;
+                        margin-right: 8px;
+                    }
+                    img:first-child{
+                        margin-top: 8px;
+                    }
                     .add{
-                        margin: 8px;
+                        margin-left: 8px;
+                        margin-right: 8px;
                         width: auto;
                         button{
-                            padding-top: 3vh;
-                            padding-bottom: 3vh;
+                            height: 40px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
                             width: 100%;
                             background: transparent;
                             border: 1px solid #70C05B;
